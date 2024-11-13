@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Collection - Sillhouette</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-image: url('https://www.solidbackgrounds.com/images/950x350/950x350-grullo-solid-color-background.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            color: white;
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(10, 92, 54, 0.9);
+            padding: 10px 20px;
+            position: relative;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+            margin: 0;
+            font-size: 2.5em;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(10, 92, 54, 0.9);
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ddd;
+        }
+
+        /* Hero Section for Men */
+        .hero {
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            margin-bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            color: #f8f8f8;
+            margin: 10px 0;
+        }
+
+        /* Product Section */
+        .product-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .product-section h2 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        .product p {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .product .price {
+            font-size: 1.4em;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button {
+            background-color: #0A5C36;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #09632D;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: rgba(10, 92, 54, 0.9);
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sillhouette</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Main</a></li>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="#women">Women</a></li>
+            <li><a href="#kids">Kids</a></li>
+            <li><a href="#sale">Sale</a></li>
+            <li><a href="#help">Help</a></li>
+            <li><a href="#join">Join Us</a></li>
+            <li><a href="#sign-in">Sign In</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Men's Collection</h2>
+        <p>Where style meets performance</p>
+    </div>
+
+    <!-- Product Section -->
+    <section class="product-section">
+        <h2>Our Men's Collection</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://i.pinimg.com/736x/79/ad/ce/79adceb73887eec65e7f523731e00a9e.jpg" alt="Stylish Jacket">
+                <h3>Stylish Jacket</h3>
+                <p>A sleek, versatile jacket perfect for any occasion.</p>
+                <div class="price">$40.00</div>
+                <button class="cta-button">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/736x/a0/3b/03/a03b03262ede8920d82109350c8c9c69.jpg" alt="Casual Shirt">
+                <h3>Casual Shirt</h3>
+                <p>Comfort and style combined in one shirt.</p>
+                <div class="price">$35.00</div>
+                <button class="cta-button">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/736x/5d/ef/25/5def25a929b0d589a4575d9443b02a2c.jpg" alt="Running Shoes">
+                <h3>Running Shoes</h3>
+                <p>Lightweight and durable, perfect for every run.</p>
+                <div class="price">$45.00</div>
+                <button class="cta-button">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/736x/eb/0f/53/eb0f5388a9539f5078910859db1f474b.jpg" alt="Performance Shorts">
+                <h3>Performance Shorts</h3>
+                <p>Designed for maximum comfort during workouts.</p>
+                <div class="price">$30.00</div>
+                <button class="cta-button">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/736x/ea/ef/91/eaef914df05d0845785e46059f6ffaf6.jpg" alt="Sports Watch">
+                <h3>Sports Watch</h3>
+                <p>Track your performance in style with this sports watch.</p>
+                <div class="price">$42.00</div>
+                <button class="cta-button">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/736x/ca/d6/4a/cad64a445dac4bc82fe9f269efe4d21b.jpg" alt="Classic Sneakers">
+                <h3>Classic Sneakers</h3>
+                <p>A timeless design that pairs with any outfit.</p>
+                <div class="price">$38.00</div>
+                <button class="cta-button">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Sillhouette. All Rights Reserved.</p>
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    </footer>
+
+</body>
+</html>

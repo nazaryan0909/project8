@@ -1,0 +1,75 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0A5C36; /* Castleton green */
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.header-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.header-buttons a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0A5C36;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+section {
+    text-align: center;
+    margin: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    color: #555;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #0A5C36;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* General Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('c:\Users\nazaryannner\Pictures\blendBoard.jpg'); /* Make sure the path is correct */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full viewport height */
+    color: white; /* Text color */
+}
+
+/* You can add more styling here, like header, footer, etc. */
