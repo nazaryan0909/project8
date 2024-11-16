@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center - Sillhouette</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* General styling for the Help Center */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0A5C36;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .help-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .help-container h2 {
+            font-size: 2.5em;
+            color: #0A5C36;
+        }
+
+        .help-section {
+            margin-bottom: 30px;
+        }
+
+        .help-section h3 {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .help-section p {
+            font-size: 1.1em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .help-section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .help-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .search-bar {
+            margin-top: 20px;
+            padding: 10px;
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            margin-bottom: 30px;
+        }
+
+        .help-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .help-links a {
+            font-size: 1.2em;
+            color: #0A5C36;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #0A5C36;
+            transition: background-color 0.3s;
+        }
+
+        .help-links a:hover {
+            background-color: #0A5C36;
+            color: white;
+        }
+
+        .back-button {
+            margin-top: 40px;
+            padding: 10px 20px;
+            background-color: #0A5C36;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            text-align: center;
+            display: inline-block;
+            transition: background-color 0.3s;
+            display: block;
+            width: 200px;
+            margin: 0 auto;
+        }
+
+        .back-button:hover {
+            background-color: #05502e;
+        }
+
+        footer {
+            background-color: #0A5C36;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sillhouette Help Center</h1>
+        <p>Your guide to a seamless experience on our website.</p>
+    </header>
+
+    <div class="help-container">
+        <h2>How Can We Help You?</h2>
+
+        <!-- Search Bar -->
+        <input type="text" class="search-bar" placeholder="Search for help...">
+
+        <!-- Help Sections -->
+        <div class="help-links">
+            <a href="#sign-in-help">Sign In & Account</a>
+            <a href="#order-help">Order Help</a>
+            <a href="#shipping-help">Shipping & Delivery</a>
+            <a href="#return-help">Returns & Exchanges</a>
+        </div>
+
+        <div id="sign-in-help" class="help-section">
+            <h3>Sign In & Account</h3>
+            <p>If you have trouble signing in, follow these steps:</p>
+            <ul>
+                <li>Ensure you're using the correct email and password.</li>
+                <li>If you forgot your password, click the "Forgot Password?" link and follow the instructions.</li>
+                <li>Ensure you have activated your account via the confirmation email.</li>
+            </ul>
+        </div>
+
+        <div id="order-help" class="help-section">
+            <h3>Order Help</h3>
+            <p>To place an order, follow these steps:</p>
+            <ul>
+                <li>Browse our products and add items to your cart.</li>
+                <li>Click the "Checkout" button and fill in your shipping details.</li>
+                <li>Choose a payment method and complete your purchase.</li>
+                <li>You'll receive an order confirmation email with your order details.</li>
+            </ul>
+        </div>
+
+        <div id="shipping-help" class="help-section">
+            <h3>Shipping & Delivery</h3>
+            <p>Once your order is placed, we aim to deliver it within 5-7 business days. Here's what you can expect:</p>
+            <ul>
+                <li>You’ll receive tracking details once your order ships.</li>
+                <li>If you encounter any delays or issues, feel free to contact us via our support page.</li>
+            </ul>
+        </div>
+
+        <div id="return-help" class="help-section">
+            <h3>Returns & Exchanges</h3>
+            <p>If you're not satisfied with your purchase, here’s how to return it:</p>
+            <ul>
+                <li>Return items within 30 days of receiving your order.</li>
+                <li>Ensure the item is unused, with all tags attached.</li>
+                <li>Fill out the return form included in your order, or use our online return portal.</li>
+                <li>Once processed, your refund will be issued to the original payment method.</li>
+            </ul>
+        </div>
+
+        <!-- Single Back to Main Button -->
+        <a href="index.html" class="back-button">Back to Main Page</a>
+    </div>
+
+    <footer>
+        <p>For further assistance, please <a href="contact.html" style="color:white;">contact us</a>.</p>
+    </footer>
+
+</body>
+</html>
