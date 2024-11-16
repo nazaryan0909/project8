@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Men's Collection - Sillhouette</title>
+    <title>Women's Collection - Sillhouette</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
         /* General Styling */
@@ -64,26 +64,7 @@
             color: #ddd;
         }
 
-        /* Cart Icon */
-        .cart-icon {
-            position: relative;
-            font-size: 1.5em;
-            color: white;
-            cursor: pointer;
-        }
-
-        .cart-count {
-            position: absolute;
-            top: -10px;
-            right: -10px;
-            background-color: red;
-            color: white;
-            border-radius: 50%;
-            padding: 5px 10px;
-            font-size: 1em;
-        }
-
-        /* Hero Section for Men */
+        /* Hero Section for Women */
         .hero {
             height: 300px;
             display: flex;
@@ -212,57 +193,65 @@
             <li><a href="index.html">Main</a></li>
             <li><a href="men.html">Men</a></li>
             <li><a href="women.html">Women</a></li>
-            <li><a href="kids.html">Kids</a></li>
+            <li><a href="#kids">Kids</a></li>
             <li><a href="#sale">Sale</a></li>
             <li><a href="help.html">Help</a></li>
             <li><a href="#join">Join Us</a></li>
             <li><a href="sign.html">Sign In</a></li>
         </ul>
-        <!-- Cart Icon -->
-        <div class="cart-icon" onclick="viewCart()">
-            🛒
-            <div id="cart-count" class="cart-count">0</div>
-        </div>
     </nav>
 
     <!-- Hero Section -->
     <div class="hero">
-        <h2>Men's Collection</h2>
-        <p>Where style meets performance</p>
+        <h2>Women's Collection</h2>
+        <p>Empowering women with style and comfort</p>
     </div>
 
     <!-- Product Section -->
     <section class="product-section">
-        <h2>Our Men's Collection</h2>
+        <h2>Our Women's Collection</h2>
         <div class="product-grid">
             <div class="product">
-                <img src="https://i.pinimg.com/736x/79/ad/ce/79adceb73887eec65e7f523731e00a9e.jpg" alt="Stylish Jacket">
-                <h3>Stylish Jacket</h3>
-                <p>A sleek, versatile jacket perfect for any occasion.</p>
+                <img src="https://glizm.com/cdn/shop/files/ea2f6be328204b538673c7afa5353f44_tplv-photomode-image.jpg?v=1729554142&width=713" alt="Stylish Dress">
+                <h3>Stylish Dress</h3>
+                <p>A beautiful dress for any occasion.</p>
+                <div class="price">$50.00</div>
+                <button class="cta-button" onclick="addToCart('Stylish Dress', 50)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://glizm.com/cdn/shop/files/6e09223cacad436fa02aa6479d0436cc_tplv-photomode-image.jpg?v=1729554142&width=713" alt="Casual Top">
+                <h3>Casual Top</h3>
+                <p>Comfortable and perfect for everyday wear.</p>
+                <div class="price">$25.00</div>
+                <button class="cta-button" onclick="addToCart('Casual Top', 25)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://glizm.com/cdn/shop/files/1496dd55c5fd417d8eeeeb61e0e16a63_tplv-photomode-image_18a5fe9d-a58a-4676-8f51-6915fff15a2d.jpg?v=1729554142&width=713" alt="Trendy Skirt">
+                <h3>Trendy Skirt</h3>
+                <p>Chic and stylish, a must-have for your wardrobe.</p>
                 <div class="price">$40.00</div>
-                <button class="cta-button" onclick="addToCart()">Add to Cart</button>
+                <button class="cta-button" onclick="addToCart('Trendy Skirt', 40)">Add to Cart</button>
             </div>
             <div class="product">
-                <img src="https://i.pinimg.com/736x/a0/3b/03/a03b03262ede8920d82109350c8c9c69.jpg" alt="Casual Shirt">
-                <h3>Casual Shirt</h3>
-                <p>Comfort and style combined in one shirt.</p>
-                <div class="price">$35.00</div>
-                <button class="cta-button" onclick="addToCart()">Add to Cart</button>
-            </div>
-            <div class="product">
-                <img src="https://i.pinimg.com/736x/5d/ef/25/5def25a929b0d589a4575d9443b02a2c.jpg" alt="Running Shoes">
-                <h3>Running Shoes</h3>
-                <p>Lightweight and durable, perfect for every run.</p>
-                <div class="price">$45.00</div>
-                <button class="cta-button" onclick="addToCart()">Add to Cart</button>
-            </div>
-            <div class="product">
-                <img src="https://i.pinimg.com/736x/eb/0f/53/eb0f5388a9539f5078910859db1f474b.jpg" alt="Performance Shorts">
-                <h3>Performance Shorts</h3>
-                <p>Designed for maximum comfort during workouts.</p>
+                <img src="https://glizm.com/cdn/shop/files/a502bec1c51c45f3a34d3841b1e1eec2_tplv-photomode-image.jpg?v=1729554143&width=713" alt="Summer Sandals">
+                <h3>Summer Sandals</h3>
+                <p>Light and comfortable sandals for the hot weather.</p>
                 <div class="price">$30.00</div>
-                <button class="cta-button" onclick="addToCart()">Add to Cart</button>
+                <button class="cta-button" onclick="addToCart('Summer Sandals', 30)">Add to Cart</button>
             </div>
-            <!-- Add 2 more products here -->
-            <div class="product">
-                <img src="https://i.pinimg.com/736x/ab
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sillhouette. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function addToCart(productName, price) {
+            alert(productName + " has been added to your cart for $" + price);
+            // Implement cart functionality here
+        }
+    </script>
+
+</body>
+</html>
