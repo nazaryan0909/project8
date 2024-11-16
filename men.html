@@ -36,18 +36,20 @@
         /* Navigation */
         nav {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
             background-color: rgba(10, 92, 54, 0.9);
-            padding: 10px;
+            padding: 10px 20px;
         }
 
         nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
+            display: flex;
         }
 
         nav ul li {
-            display: inline;
             margin: 0 20px;
         }
 
@@ -60,6 +62,25 @@
 
         nav ul li a:hover {
             color: #ddd;
+        }
+
+        /* Cart Icon */
+        .cart-icon {
+            position: relative;
+            font-size: 1.5em;
+            color: white;
+            cursor: pointer;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 5px 10px;
+            font-size: 1em;
         }
 
         /* Hero Section for Men */
@@ -197,6 +218,11 @@
             <li><a href="#join">Join Us</a></li>
             <li><a href="#sign-in">Sign In</a></li>
         </ul>
+        <!-- Cart Icon -->
+        <div class="cart-icon" onclick="viewCart()">
+            🛒
+            <div id="cart-count" class="cart-count">0</div>
+        </div>
     </nav>
 
     <!-- Hero Section -->
@@ -214,50 +240,29 @@
                 <h3>Stylish Jacket</h3>
                 <p>A sleek, versatile jacket perfect for any occasion.</p>
                 <div class="price">$40.00</div>
-                <button class="cta-button">Add to Cart</button>
+                <button class="cta-button" onclick="addToCart()">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="https://i.pinimg.com/736x/a0/3b/03/a03b03262ede8920d82109350c8c9c69.jpg" alt="Casual Shirt">
                 <h3>Casual Shirt</h3>
                 <p>Comfort and style combined in one shirt.</p>
                 <div class="price">$35.00</div>
-                <button class="cta-button">Add to Cart</button>
+                <button class="cta-button" onclick="addToCart()">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="https://i.pinimg.com/736x/5d/ef/25/5def25a929b0d589a4575d9443b02a2c.jpg" alt="Running Shoes">
                 <h3>Running Shoes</h3>
                 <p>Lightweight and durable, perfect for every run.</p>
                 <div class="price">$45.00</div>
-                <button class="cta-button">Add to Cart</button>
+                <button class="cta-button" onclick="addToCart()">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="https://i.pinimg.com/736x/eb/0f/53/eb0f5388a9539f5078910859db1f474b.jpg" alt="Performance Shorts">
                 <h3>Performance Shorts</h3>
                 <p>Designed for maximum comfort during workouts.</p>
                 <div class="price">$30.00</div>
-                <button class="cta-button">Add to Cart</button>
+                <button class="cta-button" onclick="addToCart()">Add to Cart</button>
             </div>
+            <!-- Add 2 more products here -->
             <div class="product">
-                <img src="https://i.pinimg.com/736x/ea/ef/91/eaef914df05d0845785e46059f6ffaf6.jpg" alt="Sports Watch">
-                <h3>Sports Watch</h3>
-                <p>Track your performance in style with this sports watch.</p>
-                <div class="price">$42.00</div>
-                <button class="cta-button">Add to Cart</button>
-            </div>
-            <div class="product">
-                <img src="https://i.pinimg.com/736x/ca/d6/4a/cad64a445dac4bc82fe9f269efe4d21b.jpg" alt="Classic Sneakers">
-                <h3>Classic Sneakers</h3>
-                <p>A timeless design that pairs with any outfit.</p>
-                <div class="price">$38.00</div>
-                <button class="cta-button">Add to Cart</button>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2024 Sillhouette. All Rights Reserved.</p>
-        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
-    </footer>
-
-</body>
-</html>
+                <img src="https://i.pinimg.com/736x/ab
